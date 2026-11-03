@@ -1,0 +1,181 @@
+/* ------------------------------
+   Основні кольори
+--------------------------------*/
+QWidget {
+    background-color: #f9f9f9;        /* світлий фон */
+    color: #2b2b2b;                   /* темно-сірий текст */
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+}
+
+/* ------------------------------
+   Вкладки
+--------------------------------*/
+QTabWidget::pane {
+    border: 1px solid #c0c0c0;
+    top: 2px;
+}
+
+QTabBar::tab {
+    background: #e0ffe0; /* світлий лаймовий фон */
+    border: 1px solid #c0c0c0;
+    border-bottom: none;
+    padding: 8px 16px;
+    min-width: 140px;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QTabBar::tab:selected {
+    background: #a8ff78; /* яскравий лайм для активної вкладки */
+    color: #1b1b1b;
+}
+
+QTabBar::tab:hover {
+    background: #cfff9e;
+}
+
+/* ------------------------------
+   Кнопки
+--------------------------------*/
+QPushButton {
+    background-color: #a8ff78;
+    color: #1b1b1b;
+    border: 1px solid #7ed957;;
+    border-radius: 6px;
+    min-width: 140px;
+    max-width: 140px;
+    height: 30px;
+    font-weight: bold;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: #8cf263;
+}
+
+QPushButton:pressed {
+    background-color: #6ccc50;
+}
+
+/* Відстань між кнопками */
+QHBoxLayout > QPushButton {
+    margin-right: 20px;
+}
+
+/* Відступи над та під кнопками */
+QVBoxLayout > QHBoxLayout {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------
+   Таблиці
+--------------------------------*/
+QTableWidget {
+    border: 1px solid #c0c0c0;
+    gridline-color: #d0d0d0;
+}
+
+QHeaderView::section {
+    background-color: #e0ffe0;
+    border: 1px solid #c0c0c0;
+    padding: 4px;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   Діалогові вікна
+--------------------------------*/
+QDialog {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+QDialog QLabel {
+    font-size: 14px;
+}
+
+QDialog QLineEdit, 
+QDialog QDateEdit, 
+QDialog QComboBox {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #ffffff;
+}
+
+QDialog QPushButton {
+    min-width: 100px;
+}
+
+/* ------------------------------
+   Вікно деталей пристрою
+--------------------------------*/
+QDialog#DeviceInfoDialog {
+    background-color: #e0ffe0;
+}
+
+QDialog#DeviceInfoDialog QLabel {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+QDialog#DeviceInfoDialog QPushButton {
+    background-color: #a8ff78;
+    font-weight: bold;
+    min-width: 100px;
+    border-radius: 6px;
+}
+
+QDialog#DeviceInfoDialog QPushButton:hover {
+    background-color: #8cf263;
+}
+
+/* ------------------------------
+   Чекбокси та випадаючі списки
+--------------------------------*/
+QCheckBox {
+    spacing: 6px;
+}
+
+QComboBox {
+    padding: 2px 4px;
+}
+
+/* ------------------------------
+   Прокрутка
+--------------------------------*/
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #a8ff78;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #8cf263;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+
+/* Виділення рядка у таблиці */
+QTableWidget::item:selected {
+    background-color: #cfff9e; /* світло-лаймовий */
+    color: #1b1b1b;            /* темний текст */
+}
+
+QTableWidget::item:hover {
+    background-color: #e0ffe0; /* при наведенні */
+}
